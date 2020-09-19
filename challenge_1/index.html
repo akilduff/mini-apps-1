@@ -1,2 +1,54 @@
-
+<!doctype html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <style>
+      .grid-container {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+        padding: 20px;
+      }
+      .grid-item {
+        text-align: center;
+        font-size: 40px;
+        padding: 20px 20px;
+      }
+      .X {
+        text-align: center;
+        font-size: 40px;
+        padding: 20px 20px;
+      }
+      .O {
+        text-align: center;
+        font-size: 40px;
+        padding: 20px 20px;
+      }
+      .text-align {
+        text-align: center;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-align"> Tic Tac Toe</h1>
+    <h2 class="text-align" id="result">Let's get it started</h2>
+    <div class="text-align" id="titles">Starting with zero wins a piece</div>
+    <div class="grid-container" id="board">
+      <button class='grid-item' id='1'>  </button>
+      <button class='grid-item' id='2'>  </button>
+      <button class='grid-item' id='3'>  </button>
+      <button class='grid-item' id='4'>  </button>
+      <button class='grid-item' id='5'>  </button>
+      <button class='grid-item' id='6'>  </button>
+      <button class='grid-item' id='7'>  </button>
+      <button class='grid-item' id='8'>  </button>
+      <button class='grid-item' id='9'>  </button>
+    </div>
+    <br>
+    <div class="text-align" id='reset'> Reset Gameboard</div>
+    <script src="app.js"></script>
+  </body>
+</html>
 
